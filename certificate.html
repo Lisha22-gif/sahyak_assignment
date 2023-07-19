@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Certificate Generator</title>
+  </head>
+  <body>
+    <h1>Certificate Generator</h1>
+    <form method="POST" action="">
+      {% csrf_token %}
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="course">Course:</label>
+      <input type="text" id="course" name="course" required>
+
+      <button type="submit">Generate Certificate</button>
+    </form>
+  </body>
+</html>
